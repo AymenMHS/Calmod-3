@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALMOD 2</title>
+    <script src="script.js"></script>
+	<link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a href="https://www.facebook.com/profile.php?id=100009553989466" class="titre">
+            <img src="img/logo.png" style="width: 50px; height: 50px;">
+            <div class="title">
+                <h2>CALMOD 3</h2>
+                <h6>By AymenHS</h6>
+            </div>
+        </a>
+    </div>
+    <div class="liste">
+            <div class="titre-note">
+                <h1>MODULE</h1>
+                <h1>CC</h1>
+                <h1>EXAM</h1>
+                <h1>Moyenne du module</h1>
+            </div>
+            <div class="note1">
+                <h2>Reseaux</h2>
+                <div class="inputs"><input type="number" id="CC1" name="CC" oninput="calculerMoyenneModule1()"></div>
+                <div class="inputs"> <input type="number" id="EF1" name="EF" oninput="calculerMoyenneModule1()"></div>
+                <p id="moyenneModule1">...</p>
+            </div>
+            <div class="note2">
+                <h2>BDD</h2>
+                <div class="inputs"> <input type="number" id="CC2" name="CC" oninput="calculerMoyenneModule2()"></div>
+                <div class="inputs"> <input type="number" id="EF2" name="EF" oninput="calculerMoyenneModule2()"></div>
+                <p id="moyenneModule2">...</p>
+            </div>
+            <div class="note3">
+                <h2>SE</h2>
+                <div class="inputs"> <input type="number" id="CC3" name="CC" oninput="calculerMoyenneModule3()"></div>
+                <div class="inputs"> <input type="number" id="EF3" name="EF" oninput="calculerMoyenneModule3()"></div>
+                <p id="moyenneModule3">...</p>
+            </div>
+            <div class="note4">
+                <h2>THL</h2>
+                <div class="inputs"> <input type="number" id="CC4" name="CC" oninput="calculerMoyenneModule4()"></div>
+                <div class="inputs"> <input type="number" id="EF4" name="EF" oninput="calculerMoyenneModule4()"></div>
+                <p id="moyenneModule4">...</p>
+            </div>
+            <div class="note5">
+                <h2>DAW</h2>
+                <div class="inputs"> <input type="number" id="CC5" name="CC" oninput="calculerMoyenneModule5()"></div>
+                <div class="inputs"> <input type="number" id="EF5" name="EF" oninput="calculerMoyenneModule5()"></div>
+                <p id="moyenneModule5">...</p>
+            </div>
+            <div class="note6">
+                <h2>POO</h2>
+                <div class="inputs"> <input type="number" id="CC6" name="CC" oninput="calculerMoyenneModule6()"></div>
+                <div class="inputs"> <input type="number" id="EF6" name="EF" oninput="calculerMoyenneModule6()"></div>
+                <p id="moyenneModule6">...</p>
+            </div>
+            <div class="note7">
+                <h2>ANG</h2>
+                <p class="vide"></p>
+                <div class="inputs"><input type="number" id="EF7" name="EF" oninput="calculerMoyenneModule7()"></div>
+                <p id="moyenneModule7">...</p>
+            </div>
+    </div>
+    <div class="moyenne">
+        <div class="button-container">
+    	    <button class="button-29" role="button" onclick="calculerMoyenneGenerale()">Calculer</button>
+		</div>
+		<h1>Moyenne</h1>
+		<p id="moyenneGenerale">...</p>
+    </div>
+</body>
+</html>
